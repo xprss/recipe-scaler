@@ -1,0 +1,15 @@
+services:
+  client:
+    image: xprss/recipe-scaler:${VERSION:-latest}
+    container_name: recipe-scaler
+    restart: unless-stopped
+    ports:
+      - "4200:80" # assuming NGINX serves Angular at port 80 inside container
+    depends_on:
+      - server
+    networks:
+      - vividinet
+
+networks:
+  vividinet:
+    driver: bridge
