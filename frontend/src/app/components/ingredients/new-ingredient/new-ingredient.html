@@ -1,0 +1,39 @@
+<div class="new-ingredient-container">
+  <div class="new-ingredient-input">
+    <label class="ingredient-label" for="ingredient-name">Nome ingrediente</label>
+    <input
+      class="ingredient-input"
+      (keydown)="handleKeyDown($event)"
+      [(ngModel)]="brain.inputIngredient.name"
+      type="text"
+      name="ingredient-name"
+      id="ingredient-name"
+      placeholder="es. farina"
+    />
+  </div>
+  <div class="new-ingredient-input">
+    <label class="ingredient-label" for="ingredient-name">Quantità</label>
+    <input
+      class="ingredient-input"
+      (keydown)="handleKeyDown($event)"
+      [(ngModel)]="brain.inputIngredient.quantity"
+      type="number"
+      name="ingredient-quantity"
+      id="ingredient-quantity"
+      placeholder="es. 250"
+    />
+  </div>
+  <div class="new-ingredient-input">
+    <label class="ingredient-label" for="ingredient-name">Unità</label>
+    <input
+      class="ingredient-input"
+      (keydown)="handleKeyDown($event)"
+      [(ngModel)]="brain.inputIngredient.unit"
+      type="text"
+      name="ingredient-unit"
+      id="ingredient-unit"
+        placeholder="es. grammi"
+    />
+  </div>
+  <button (click)="addNewIngredient()">Aggiungi ingrediente</button>
+</div>
