@@ -1,6 +1,6 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { providePrimeNG } from 'primeng/config';
-import Lara from '@primeng/themes/lara';
+import Aura from '@primeng/themes/aura';
 
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
@@ -11,7 +11,7 @@ bootstrapApplication(App, {
     ...(appConfig.providers || []),
     providePrimeNG({
       theme: {
-        preset: Lara,
+        preset: Aura,
         options: {
           darkModeSelector: 'body'
         }
