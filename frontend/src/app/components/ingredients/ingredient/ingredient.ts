@@ -1,13 +1,18 @@
 import { Component, Input } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { IngredientDTO } from '../../../ingredient.dto';
 import { Brain } from '../../../brain';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-ingredient',
-  imports: [FormsModule],
-  templateUrl: './ingredient.html',
-  styleUrl: './ingredient.scss',
+  imports: [ButtonModule],
+  template: `<tr>
+    <td><p-button variant="text" severity="secondary" icon="pi pi-trash" (onClick)="this.deleteIngredient()"></p-button></td>
+    <td>{{ ingredient.name }}</td>
+    <td>{{ (ingredient.quantity! * brain.portions!) / max(brain.originalPortions, 1)! }}</td>
+    <td>{{ ingredient.unit }}</td>
+  </tr> `,
+  host: { style: 'display: contents;' } 
 })
 export class Ingredient {
   @Input() public index: number = 0;

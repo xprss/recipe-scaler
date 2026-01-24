@@ -1,39 +1,42 @@
 <div class="new-ingredient-container">
-  <div class="new-ingredient-input">
-    <label class="ingredient-label" for="ingredient-name">Nome ingrediente</label>
+  <p-floatlabel variant="in" class="w-100">
     <input
-      class="ingredient-input"
-      (keydown)="handleKeyDown($event)"
+      pInputText
+      id="username"
+      class="w-100"
       [(ngModel)]="brain.inputIngredient.name"
-      type="text"
-      name="ingredient-name"
-      id="ingredient-name"
-      placeholder="es. farina"
-    />
-  </div>
-  <div class="new-ingredient-input">
-    <label class="ingredient-label" for="ingredient-name">Quantità</label>
-    <input
-      class="ingredient-input"
       (keydown)="handleKeyDown($event)"
-      [(ngModel)]="brain.inputIngredient.quantity"
-      type="number"
-      name="ingredient-quantity"
-      id="ingredient-quantity"
-      placeholder="es. 250"
+      autocomplete="off"
     />
+    <label for="username">Nome ingrediente</label>
+  </p-floatlabel>
+  <div class="quantity-and-unit">
+    <p-floatlabel variant="in">
+      <input
+        pInputText
+        id="quantity"
+        [(ngModel)]="brain.inputIngredient.quantity"
+        (keydown)="handleKeyDown($event)"
+        autocomplete="off"
+      />
+      <label for="quantity">Quantità</label>
+    </p-floatlabel>
+    <p-floatlabel variant="in">
+      <input
+        pInputText
+        id="unit"
+        [(ngModel)]="brain.inputIngredient.unit"
+        (keydown)="handleKeyDown($event)"
+        autocomplete="off"
+      />
+      <label for="unit">Unità</label>
+    </p-floatlabel>
   </div>
-  <div class="new-ingredient-input">
-    <label class="ingredient-label" for="ingredient-name">Unità</label>
-    <input
-      class="ingredient-input"
-      (keydown)="handleKeyDown($event)"
-      [(ngModel)]="brain.inputIngredient.unit"
-      type="text"
-      name="ingredient-unit"
-      id="ingredient-unit"
-        placeholder="es. grammi"
-    />
-  </div>
-  <button (click)="addNewIngredient()">Aggiungi ingrediente</button>
+
+  <p-button
+    class="new-ingredient-button"
+    (click)="addNewIngredient()"
+    label="Aggiungi ingrediente"
+    [fluid]="true"
+  ></p-button>
 </div>

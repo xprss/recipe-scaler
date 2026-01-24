@@ -1,19 +1,25 @@
 .new-ingredient-container {
     display: flex;
+    gap: 0.3rem;
     flex-direction: column;
-}
-
-.new-ingredient-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .ingredient-label {
     word-break: none;
 }
 
-.ingredient-input {
-    // width: 100%;
+.quantity-and-unit {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.new-ingredient-button {
+    width: 100%;
+}
+
+.new-ingredient-button .p-button {
+    width: 100% !important;
 }

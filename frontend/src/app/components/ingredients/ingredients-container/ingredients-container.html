@@ -1,13 +1,21 @@
 <div class="ingredients-container">
-    <h3>Ingredienti</h3>
-    @if(brain.ingredients.length > 0) {
-        <div class="ingredients-renderer">
-            @for (ingredient of brain.ingredients; track $index) {
-                <app-ingredient [index]="$index" [ingredient]="ingredient"></app-ingredient>
-            }
-        </div>
-    } @else {
-        <p class="no-ingredients-message">Non ci sono ingredienti.</p>
-    }
-    
+  @if(brain.ingredients.length > 0) {
+  <p-table [value]="brain.ingredients" [tableStyle]="{ 'min-width': '100%' }">
+    <ng-template #header>
+      <tr>
+        <th style="width: 10%"></th>
+        <th style="width: 20%">Nome</th>
+        <th style="width: 20%">
+          Quantità
+        </th>
+        <th style="width: 20%">Unità</th>
+      </tr>
+    </ng-template>
+    <ng-template #body let-ingredient let-rowIndex="rowIndex">
+      <app-ingredient [index]="rowIndex" [ingredient]="ingredient"></app-ingredient>
+    </ng-template>
+  </p-table>
+  } @else {
+  <p class="no-ingredients-message">Aggiungi il tuo primo ingrediente!</p>
+  }
 </div>
