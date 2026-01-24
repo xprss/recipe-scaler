@@ -24,7 +24,7 @@ export class Brain {
 
   public addNewIngredient() {
     if (this.inputIngredient.name && (this.inputIngredient.quantity ?? 0) > 0 && this.inputIngredient.unit) {
-      this.ingredients.push({ ...this.inputIngredient });
+      this.ingredients = [...this.ingredients, this.inputIngredient];
       this.inputIngredient = { name: undefined, quantity: undefined, unit: undefined };
     }
   }
