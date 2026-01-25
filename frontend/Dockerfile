@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Build Angular ignoring budgets
-RUN npm run build -- --prod --budgets=false
+RUN npm run build -- --configuration production
 
 # Stage 2: Nginx
 FROM nginx:alpine
