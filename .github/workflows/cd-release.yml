@@ -58,4 +58,4 @@ jobs:
         with:
           context: frontend
           push: true
-          tags: recipe-scaler:${{ env.VERSION }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/recipe-scaler:${{ env.VERSION }}
