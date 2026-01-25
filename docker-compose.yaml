@@ -4,11 +4,7 @@ services:
     container_name: recipe-scaler
     restart: unless-stopped
     ports:
-      - "4200:80" # assuming NGINX serves Angular at port 80 inside container
-    depends_on:
-      - server
-    networks:
-      - vividinet
+      - "9000:9000"
 
 networks:
   vividinet:

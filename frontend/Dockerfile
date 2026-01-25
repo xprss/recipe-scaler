@@ -16,21 +16,3 @@ COPY . .
 
 # Build Angular ignoring budgets
 RUN npm run build -- --configuration production
-
-# Stage 2: Nginx
-FROM nginx:alpine
-
-# Remove default Nginx config
-RUN rm -rf /etc/nginx/conf.d/default.conf
-
-# Copy custom nginx config
-COPY nginx.conf /etc/nginx/conf.d/recipe-scaler.conf
-
-# Copy Angular dist from build stage
-COPY --from=build /frontend/dist /usr/share/nginx/html
-
-# Expose port
-EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
