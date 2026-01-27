@@ -1,9 +1,14 @@
+:host {
+    width: 100%;
+}
+
 .new-ingredient-container {
     display: flex;
     gap: 0.3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 .ingredient-label {
@@ -12,8 +17,17 @@
 
 .quantity-and-unit {
     display: flex;
-    flex-direction: row;
     gap: 0.3rem;
+    width: 100%;
+}
+
+.quantity-and-unit > p-floatlabel {
+    flex: 1;
+    min-width: 0;
+}
+
+.quantity-and-unit input {
+    width: 100%;
 }
 
 .new-ingredient-button {
