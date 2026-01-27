@@ -4,4 +4,4 @@ services:
     container_name: recipe-scaler
     restart: unless-stopped
     ports:
-      - "9000:9000"
+      - "9000:80"
