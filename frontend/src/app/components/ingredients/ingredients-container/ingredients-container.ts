@@ -18,4 +18,8 @@ export class IngredientsContainer {
   public copyIngredientsToClipboard(): void {
     copyTextToClipboard(this.brain.ingredients, this.brain.portions, this.brain.originalPortions);
   }
+
+  public deleteAllIngredients(): void {
+    this.brain.deleteAllIngredients();
+  }
 }

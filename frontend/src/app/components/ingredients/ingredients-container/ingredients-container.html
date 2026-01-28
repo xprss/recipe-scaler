@@ -1,17 +1,26 @@
-@if (brain.ingredients.length > 0) {
-    <div class="copy-ingredients-button-container">
-        <p-button
-          variant="text"
-          severity="secondary"
-          icon="pi pi-copy"
-          size="small"
-          label="Copia"
-          (onClick)="copyIngredientsToClipboard()"
-          [fluid]="true"
-        ></p-button>
-    </div>
-}
-
+<div class="ingredients-button-container">
+  <p-button
+    variant="text"
+    severity="danger"
+    icon="pi pi-trash"
+    size="small"
+    [disabled]="brain.ingredients.length === 0"
+    label="Elimina tutti"
+    (onClick)="deleteAllIngredients()"
+    [fluid]="true"
+  ></p-button>
+  <p-button
+    variant="text"
+    severity="secondary"
+    icon="pi pi-copy"
+    size="small"
+    [disabled]="brain.ingredients.length === 0"
+    label="Copia"
+    (onClick)="copyIngredientsToClipboard()"
+    [fluid]="true"
+  ></p-button>
+</div>
+<hr class="divider" />
 @for(ingredient of brain.ingredients; track $index) {
 <app-ingredient [index]="$index" [ingredient]="ingredient"></app-ingredient>
 }
