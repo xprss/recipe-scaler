@@ -1,22 +1,40 @@
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits {
+  font-size: 0.8rem !important;
+}
+
+.github-ref {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.jacquard {
+  font-family: 'Jacquard 12', system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-title {
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--p-primary-900);
 }
 
 .subtitle {
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-    color: #999999;
-    text-align: center;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: var(--p-primary-900);
+  text-align: center;
 }

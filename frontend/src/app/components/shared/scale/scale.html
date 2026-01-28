@@ -1,23 +1,28 @@
 <div class="scale">
-  <div class="originalPortions">
-    <div class="flex flex-col gap-2 servings">
-      <p-floatlabel variant="in">
-        <input
-          pInputText
-          id="username"
-          [(ngModel)]="brain.originalPortions"
-          autocomplete="off"
-          type="number"
-          min="1"
-          step="1"
-        />
-        <label for="username">Porzioni originali</label>
-      </p-floatlabel>
+  <div class="original-portions-container">
+    <div class="original-portions">
+      <label class="small" id="original-input-label" for="original-portions-input">Porzioni indicate nella ricetta originale</label>
+      <input
+        pInputText
+        id="original-portions-input"
+        [(ngModel)]="brain.originalPortions"
+        autocomplete="off"
+        type="number"
+        min="1"
+        step="1"
+      />
     </div>
+    @if (!brain.originalPortions) {
+      <span class="small centered-text grayded-out">Se non definisci le porzioni di partenza, prenderemo come riferimento una ricetta per due persone.</span>
+    }
   </div>
+  <hr class="divider" />
   <div class="portions">
-    <p-button (click)="decreasePortions()">-</p-button>
+    <p-button rounded="true" class="scale-button" (click)="decreasePortions()" icon="pi pi-minus" />
     <h3 class="portions-input">{{ brain.portions }}</h3>
-    <p-button (click)="increasePortions()">+</p-button>
+    <p-button rounded="true" class="scale-button" (click)="increasePortions()" icon="pi pi-plus" />
   </div>
+  @if (brain.portions > 35) {
+  <p class="funny-message">La peppa! E quanta gente hai a cena? 😱</p>
+  }
 </div>

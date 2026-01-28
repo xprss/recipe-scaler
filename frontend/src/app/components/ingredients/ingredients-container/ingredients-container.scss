@@ -1,9 +1,9 @@
-.ingredients-container {
+:host {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1rem;
+    width: 100%;
 }
 
 .ingredients-renderer {
@@ -12,4 +12,8 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+}
+
+.no-ingredients-message {
+    color: var(--p-gray-500);
 }

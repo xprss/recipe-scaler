@@ -14,12 +14,14 @@
   justify-content: center;
   align-items: center;
 }
-.originalPortions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+
+.divider {
+  border: 1px solid var(--p-gray-200);
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
 .portions-input {
   text-align: center;
   font-size: 4rem;
@@ -40,4 +42,47 @@
 
 .servings {
   text-wrap: wrap;
+}
+
+.small {
+  font-size: small;
+}
+
+.grayded-out {
+  color: var(--p-gray-500);
+}
+
+.centered-text {
+  display: flex;
+  text-align: center;
+}
+
+.original-portions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#original-input-label {
+  width: 40%;
+  text-align: right;
+}
+
+#original-portions-input {
+  width: 20%;
+}
+
+.funny-message {
+  text-align: center;
+  font-size: small;
+}
+
+.original-portions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }

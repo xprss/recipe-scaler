@@ -1,14 +1,13 @@
-@import "primeicons/primeicons.css";
+@import 'primeicons/primeicons.css';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Lavishly+Yours&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0.5rem 0.5rem;
-    background-color: #f5f5f5;
-    color: white;
-    background-color: #111111;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0.5rem 0.5rem;
+  background-color: #f5f5f5;
 }
 
 .w-100 {
-    width: 100% !important;
+  width: 100% !important;
 }

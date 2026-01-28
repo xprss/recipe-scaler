@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IngredientDTO } from './ingredient.dto';
+import { IngredientDTO } from './dto/ingredient.dto';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +8,7 @@ export class Brain {
   public portions: number = 2;
   public originalPortions: number = 2;
   public ingredients: IngredientDTO[] = [];
-  public inputIngredient: IngredientDTO = { name: undefined, quantity: undefined, unit: undefined };
+  public inputIngredient: IngredientDTO = new IngredientDTO();
   
   constructor() {}
 
@@ -24,8 +24,10 @@ export class Brain {
 
   public addNewIngredient() {
     if (this.inputIngredient.name && (this.inputIngredient.quantity ?? 0) > 0 && this.inputIngredient.unit) {
+      // Capitalize the ingredient name
+      this.inputIngredient.name = this.inputIngredient.name.charAt(0).toUpperCase() + this.inputIngredient.name.slice(1)
       this.ingredients = [...this.ingredients, this.inputIngredient];
-      this.inputIngredient = { name: undefined, quantity: undefined, unit: undefined };
+      this.inputIngredient = new IngredientDTO();
     }
   }
 

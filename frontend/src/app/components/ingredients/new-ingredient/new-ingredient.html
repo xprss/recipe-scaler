@@ -15,6 +15,7 @@
       <input
         pInputText
         id="quantity"
+        type="number"
         [(ngModel)]="brain.inputIngredient.quantity"
         (keydown)="handleKeyDown($event)"
         autocomplete="off"
@@ -36,6 +37,7 @@
   <p-button
     class="new-ingredient-button"
     (click)="addNewIngredient()"
+    icon="pi pi-plus"
     label="Aggiungi ingrediente"
     [fluid]="true"
   ></p-button>
