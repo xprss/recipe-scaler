@@ -3,13 +3,19 @@ import { FormsModule } from '@angular/forms';
 import { Brain } from '../../../brain';
 import { Ingredient } from '../ingredient/ingredient';
 import { TableModule } from 'primeng/table';
+import { Button } from 'primeng/button';
+import { copyTextToClipboard } from '../../../lib/utils';
 
 @Component({
   selector: 'app-ingredients-container',
-  imports: [FormsModule, Ingredient, TableModule],
+  imports: [FormsModule, Ingredient, TableModule, Button],
   templateUrl: './ingredients-container.html',
   styleUrl: './ingredients-container.scss',
 })
 export class IngredientsContainer {
   constructor(protected brain: Brain) {}
+
+  public copyIngredientsToClipboard(): void {
+    copyTextToClipboard(this.brain.ingredients, this.brain.portions, this.brain.originalPortions);
+  }
 }
