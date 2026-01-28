@@ -34,4 +34,8 @@ export class Brain {
   public deleteIngredient(index: number) {
     this.ingredients.splice(index, 1);
   }
+
+  public deleteAllIngredients() {
+    this.ingredients = [];
+  }
 }
