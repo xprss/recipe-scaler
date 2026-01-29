@@ -22,7 +22,10 @@
     <h3 class="portions-input">{{ brain.portions }}</h3>
     <p-button rounded="true" class="scale-button" (click)="increasePortions()" icon="pi pi-plus" />
   </div>
-  @if (brain.portions > 35) {
+  @if (brain.portions > 35 && brain.portions <= 50) {
   <p class="funny-message">La peppa! E quanta gente hai a cena? 😱</p>
+  }
+  @if (brain.portions > 50) {
+  <p class="funny-message">Spero dividiate la spesa!</p>
   }
 </div>
