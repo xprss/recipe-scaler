@@ -1,6 +1,6 @@
 <p-button icon="pi pi-trash" variant="text" severity="danger" class="delete-ingredient-button" (click)="deleteIngredient()" ></p-button>
 <div class="quantity">
-  {{ (ingredient.quantity * brain.portions) / brain.originalPortions }} {{ ingredient.unit }}
+  {{ ingredient.quantity * brain.getCoefficient() }} {{ ingredient.unit }}
 </div>
 <div class="name">
   {{ ingredient.name }}

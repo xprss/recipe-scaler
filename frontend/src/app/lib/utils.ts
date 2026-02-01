@@ -1,11 +1,12 @@
 import { IngredientDTO } from '../dto/ingredient.dto';
+import { Brain } from '../brain.ts';
 
-export const copyTextToClipboard = (ingredients: IngredientDTO[], portions: number, originalPortions: number): void => {
+export const copyTextToClipboard = (brain: Brain): void => {
   let text = '';
-  const peopleLabel = portions === 1 ? 'persona' : 'persone';
-  text += `Ingredienti per ${portions > 1 ? portions : "una"} ${peopleLabel}:\n`;
-  ingredients.forEach((ingredient, index) => {
-    text += `- ${ingredient.name}: ${ingredient.quantity * portions / originalPortions} ${ingredient.unit}`;
+  const peopleLabel = brain.portions === 1 ? 'persona' : 'persone';
+  text += `Ingredienti per ${brain.portions > 1 ? brain.portions : "una"} ${peopleLabel}:\n`;
+  brain.ingredients.forEach((ingredient, index) => {
+    text += `- ${ingredient.name}: ${ingredient.quantity * brain.getCoefficient()} ${ingredient.unit}`;
     if (index < ingredients.length - 1) {
       text += '\n';
     }

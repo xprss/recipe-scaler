@@ -16,7 +16,7 @@ export class IngredientsContainer {
   constructor(protected brain: Brain) {}
 
   public copyIngredientsToClipboard(): void {
-    copyTextToClipboard(this.brain.ingredients, this.brain.portions, this.brain.originalPortions);
+    copyTextToClipboard(this.brain);
   }
 
   public deleteAllIngredients(): void {

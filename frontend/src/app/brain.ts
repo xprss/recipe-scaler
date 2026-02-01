@@ -38,4 +38,12 @@ export class Brain {
   public deleteAllIngredients() {
     this.ingredients = [];
   }
+
+  public getCoefficient() {
+	let nextOriginalPortions: number = 2;
+	if (brain.originalPortions > 0) {
+		nextOriginalPortions = brain.originalPortions;
+	}
+	return this.portions / nextOriginalPortions;
+  }
 }
