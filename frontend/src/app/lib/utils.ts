@@ -1,5 +1,5 @@
 import { IngredientDTO } from '../dto/ingredient.dto';
-import { Brain } from '../brain.ts';
+import { Brain } from '../brain';
 
 export const copyTextToClipboard = (brain: Brain): void => {
   let text = '';
