@@ -41,8 +41,8 @@ export class Brain {
 
   public getCoefficient() {
 	let nextOriginalPortions: number = 2;
-	if (brain.originalPortions > 0) {
-		nextOriginalPortions = brain.originalPortions;
+	if (originalPortions > 0) {
+		nextOriginalPortions = originalPortions;
 	}
 	return this.portions / nextOriginalPortions;
   }
