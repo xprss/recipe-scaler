@@ -7,7 +7,7 @@ export const copyTextToClipboard = (brain: Brain): void => {
   text += `Ingredienti per ${brain.portions > 1 ? brain.portions : "una"} ${peopleLabel}:\n`;
   brain.ingredients.forEach((ingredient, index) => {
     text += `- ${ingredient.name}: ${ingredient.quantity * brain.getCoefficient()} ${ingredient.unit}`;
-    if (index < ingredients.length - 1) {
+    if (index < brain.ingredients.length - 1) {
       text += '\n';
     }
   });
