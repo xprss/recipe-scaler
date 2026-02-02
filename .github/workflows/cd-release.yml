@@ -59,3 +59,22 @@ jobs:
           context: frontend
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/recipe-scaler:${{ env.VERSION }}
+      
+      - name: Build Electron app
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run electron:dist
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ env.VERSION }}
+          name: Scalaricette v${{ env.VERSION }}
+          files: |
+            frontend/release/*.dmg
+            frontend/release/*.blockmap
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+        
