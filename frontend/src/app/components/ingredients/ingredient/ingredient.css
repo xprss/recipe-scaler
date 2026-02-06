@@ -1,9 +1,0 @@
-.quantity {
-	flex: 1 1 0;
-}
-
-.name {
-	flex: 5 1 0;
-	overflow: hidden;
-	word-break: break-all;
-}
