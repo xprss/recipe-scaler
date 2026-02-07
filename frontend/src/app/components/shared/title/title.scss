@@ -54,6 +54,12 @@
   padding: 0.1rem 0.2rem;
   background-color: var(--p-primary-50);
 }
+
+::ng-deep p-select.no-arrow {
+  background-color: var(--p-secondary-500);
+  border-radius: 1rem;
+}
+
 ::ng-deep p-select.no-arrow .p-select-dropdown,
 ::ng-deep p-select.no-arrow .p-select-dropdown-icon {
   display: none !important;
