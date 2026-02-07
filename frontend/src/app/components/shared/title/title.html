@@ -1,13 +1,26 @@
-<h1 class="main-title jacquard">Scalaricette<span class="version-tag">{{ version }}</span></h1>
-<h5 class="subtitle">Perché ogni ricetta merita di essere provata</h5>
-<span class="credits"
-  >Sviluppato con&nbsp;&nbsp;<i class="pi pi-heart-fill" style="color: var(--p-red-400)"></i
-  >&nbsp;&nbsp;da
-  <p-button
-    (onClick)="onNavigateToGitHub()"
-    size="small"
-    label="xprss"
-    severity="secondary"
-    variant="text"
-    icon="pi pi-github"
-/></span>
+<h1 class="main-title jacquard">
+  {{ 'app-title' | translate }}<span class="version-tag">{{ version }}</span>
+</h1>
+<h5 class="subtitle">{{ 'app-subtitle' | translate }}</h5>
+<div class="langauge-and-credits">
+  <p-select
+    class="no-arrow"
+    [options]="langsOptions"
+    [(ngModel)]="currentlySelectedLanguage"
+    (onChange)="changeLang($event.value)"
+    [optionLabel]="this.optionLabel"
+    [optionValue]="this.optionValue"
+    placeholder="{{ 'select-language' | translate }}"
+  />
+  <span class="credits"
+    >Sviluppato con&nbsp;&nbsp;<i class="pi pi-heart-fill" style="color: var(--p-red-400)"></i
+    >&nbsp;&nbsp;da
+    <p-button
+      (onClick)="onNavigateToGitHub()"
+      size="small"
+      label="xprss"
+      severity="secondary"
+      variant="text"
+      icon="pi pi-github"
+  /></span>
+</div>
