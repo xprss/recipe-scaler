@@ -24,4 +24,5 @@ export const Langs: Lang[] = [
   { langCode: 'pl-PL', displayName: '🇵🇱' },
   { langCode: 'sv-SE', displayName: '🇸🇪' },
   { langCode: 'en-US', displayName: '🇺🇸' },
+  { langCode: 'wo-SN', displayName: 'WO' }
 ];
