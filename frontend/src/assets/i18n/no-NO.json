@@ -1,0 +1,16 @@
+{
+    "app_title": "Skaler Oppskrifter",
+    "app_subtitle": "Fordi hver oppskrift fortjener å bli prøvd",
+    "language_selector_placeholder": "Velg språk",
+    "developer_credits_message_1": "Utviklet med",
+    "developer_credits_message_2": "av",
+    "scaler_original_servings_amount": "Porsjoner i originaloppskriften",
+    "scaler_funny_message_1": "Oi! Hvor mange personer skal du lage mat til? 😱",
+    "scaler_funny_message_2": "Håper dere deler regningen!",
+    "new_ingredient_add_button": "Legg til ingrediens",
+    "new_ingredient_name_placeholder": "Ingrediensnavn",
+    "new_ingredient_amount_placeholder": "Mengde",
+    "new_ingredient_unit_placeholder": "Enhet",
+    "list_of_ingredients_delete_all_button": "Slett alle",
+    "list_of_ingredients_copy_recipe_button": "Kopier oppskrift"
+}
