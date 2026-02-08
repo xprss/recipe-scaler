@@ -1,0 +1,16 @@
+{
+    "app_title": "Skaluj Przepisy",
+    "app_subtitle": "Bo każdy przepis zasługuje na wypróbowanie",
+    "language_selector_placeholder": "Wybierz język",
+    "developer_credits_message_1": "Stworzone z",
+    "developer_credits_message_2": "przez",
+    "scaler_original_servings_amount": "Liczba porcji w oryginalnym przepisie",
+    "scaler_funny_message_1": "O rany! Ile osób masz na kolacji? 😱",
+    "scaler_funny_message_2": "Mam nadzieję, że dzielicie się kosztami!",
+    "new_ingredient_add_button": "Dodaj składnik",
+    "new_ingredient_name_placeholder": "Nazwa składnika",
+    "new_ingredient_amount_placeholder": "Ilość",
+    "new_ingredient_unit_placeholder": "Jednostka",
+    "list_of_ingredients_delete_all_button": "Usuń wszystko",
+    "list_of_ingredients_copy_recipe_button": "Kopiuj przepis"
+}
