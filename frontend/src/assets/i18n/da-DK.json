@@ -1,0 +1,16 @@
+{
+    "app_title": "Skalér Opskrifter",
+    "app_subtitle": "Fordi hver opskrift fortjener at blive prøvet",
+    "language_selector_placeholder": "Vælg sprog",
+    "developer_credits_message_1": "Udviklet med",
+    "developer_credits_message_2": "af",
+    "scaler_original_servings_amount": "Portioner i den originale opskrift",
+    "scaler_funny_message_1": "Hold da op! Hvor mange mennesker laver du mad til? 😱",
+    "scaler_funny_message_2": "Håber I deler udgifterne!",
+    "new_ingredient_add_button": "Tilføj ingrediens",
+    "new_ingredient_name_placeholder": "Ingrediensnavn",
+    "new_ingredient_amount_placeholder": "Mængde",
+    "new_ingredient_unit_placeholder": "Enhed",
+    "list_of_ingredients_delete_all_button": "Slet alle",
+    "list_of_ingredients_copy_recipe_button": "Kopiér opskrift"
+}
