@@ -1,0 +1,16 @@
+{
+    "app_title": "Skaalaa Reseptit",
+    "app_subtitle": "Koska jokainen resepti ansaitsee tulla kokeilluksi",
+    "language_selector_placeholder": "Valitse kieli",
+    "developer_credits_message_1": "Kehitetty",
+    "developer_credits_message_2": "tekijältä",
+    "scaler_original_servings_amount": "Alkuperäisen reseptin annosmäärä",
+    "scaler_funny_message_1": "Apua! Kuinka monta ihmistä on tulossa syömään? 😱",
+    "scaler_funny_message_2": "Toivottavasti jaatte kulut!",
+    "new_ingredient_add_button": "Lisää ainesosa",
+    "new_ingredient_name_placeholder": "Ainesosan nimi",
+    "new_ingredient_amount_placeholder": "Määrä",
+    "new_ingredient_unit_placeholder": "Yksikkö",
+    "list_of_ingredients_delete_all_button": "Poista kaikki",
+    "list_of_ingredients_copy_recipe_button": "Kopioi resepti"
+}
