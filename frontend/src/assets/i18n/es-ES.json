@@ -1,0 +1,16 @@
+{
+    "app_title": "Escala Recetas",
+    "app_subtitle": "Porque cada receta merece ser probada",
+    "language_selector_placeholder": "Selecciona el idioma",
+    "developer_credits_message_1": "Desarrollado con",
+    "developer_credits_message_2": "por",
+    "scaler_original_servings_amount": "Porciones indicadas en la receta original",
+    "scaler_funny_message_1": "¡Madre mía! ¿Y cuánta gente tienes a cenar? 😱",
+    "scaler_funny_message_2": "¡Espero que compartan los gastos!",
+    "new_ingredient_add_button": "Añadir ingrediente",
+    "new_ingredient_name_placeholder": "Nombre del ingrediente",
+    "new_ingredient_amount_placeholder": "Cantidad",
+    "new_ingredient_unit_placeholder": "Unidad",
+    "list_of_ingredients_delete_all_button": "Eliminar todo",
+    "list_of_ingredients_copy_recipe_button": "Copiar receta"
+}
