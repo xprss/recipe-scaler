@@ -1,0 +1,16 @@
+{
+    "app_title": "レシピ分量調整",
+    "app_subtitle": "すべてのレシピには試す価値がある",
+    "language_selector_placeholder": "言語を選択",
+    "developer_credits_message_1": "❤️ を込めて開発",
+    "developer_credits_message_2": "作成者",
+    "scaler_original_servings_amount": "元のレシピの分量",
+    "scaler_funny_message_1": "えっ！何人分作るの？😱",
+    "scaler_funny_message_2": "みんなで割り勘だといいね！",
+    "new_ingredient_add_button": "材料を追加",
+    "new_ingredient_name_placeholder": "材料名",
+    "new_ingredient_amount_placeholder": "分量",
+    "new_ingredient_unit_placeholder": "単位",
+    "list_of_ingredients_delete_all_button": "すべて削除",
+    "list_of_ingredients_copy_recipe_button": "レシピをコピー"
+}
