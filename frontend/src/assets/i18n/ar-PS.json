@@ -1,0 +1,16 @@
+{
+    "app_title": "تعديل كميات الوصفات",
+    "app_subtitle": "لأن كل وصفة تستحق التجربة",
+    "language_selector_placeholder": "اختر اللغة",
+    "developer_credits_message_1": "تم التطوير بـ",
+    "developer_credits_message_2": "بواسطة",
+    "scaler_original_servings_amount": "عدد الحصص في الوصفة الأصلية",
+    "scaler_funny_message_1": "يا ساتر! كم شخص عندك على العشاء؟ 😱",
+    "scaler_funny_message_2": "إن شاء الله بتتقاسموا التكاليف!",
+    "new_ingredient_add_button": "إضافة مكوّن",
+    "new_ingredient_name_placeholder": "اسم المكوّن",
+    "new_ingredient_amount_placeholder": "الكمية",
+    "new_ingredient_unit_placeholder": "الوحدة",
+    "list_of_ingredients_delete_all_button": "حذف الكل",
+    "list_of_ingredients_copy_recipe_button": "نسخ الوصفة"
+}
