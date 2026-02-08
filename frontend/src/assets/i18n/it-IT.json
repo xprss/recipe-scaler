@@ -1,5 +1,16 @@
 {
-    "app-title": "Scala Ricette",
-    "app-subtitle": "Perché ogni ricetta merita di essere provata",
-    "select-language": "Seleziona la lingua"
+    "app_title": "Scala Ricette",
+    "app_subtitle": "Perché ogni ricetta merita di essere provata",
+    "language_selector_placeholder": "Seleziona la lingua",
+    "developer_credits_message_1": "Sviluppato con",
+    "developer_credits_message_2": "da",
+    "scaler_original_servings_amount": "Porzioni indicate nella ricetta originale",
+    "scaler_funny_message_1": "La peppa! E quanta gente hai a cena? 😱",
+    "scaler_funny_message_2": "Spero dividiate la spesa!",
+    "new_ingredient_add_button": "Aggiungi ingrediente",
+    "new_ingredient_name_placeholder": "Nome ingrediente",
+    "new_ingredient_amount_placeholder": "Quantità",
+    "new_ingredient_unit_placeholder": "Unità",
+    "list_of_ingredients_delete_all_button": "Elimina tutti",
+    "list_of_ingredients_copy_recipe_button": "Copia ricetta"
 }
