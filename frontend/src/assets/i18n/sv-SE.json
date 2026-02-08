@@ -1,0 +1,16 @@
+{
+    "app_title": "Skala Recept",
+    "app_subtitle": "För att varje recept förtjänar att provas",
+    "language_selector_placeholder": "Välj språk",
+    "developer_credits_message_1": "Utvecklad med",
+    "developer_credits_message_2": "av",
+    "scaler_original_servings_amount": "Portioner i originalreceptet",
+    "scaler_funny_message_1": "Oj då! Hur många personer ska äta? 😱",
+    "scaler_funny_message_2": "Hoppas ni delar på kostnaden!",
+    "new_ingredient_add_button": "Lägg till ingrediens",
+    "new_ingredient_name_placeholder": "Ingrediensnamn",
+    "new_ingredient_amount_placeholder": "Mängd",
+    "new_ingredient_unit_placeholder": "Enhet",
+    "list_of_ingredients_delete_all_button": "Ta bort alla",
+    "list_of_ingredients_copy_recipe_button": "Kopiera recept"
+}
