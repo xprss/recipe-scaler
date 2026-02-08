@@ -1,0 +1,16 @@
+{
+    "app_title": "食谱比例调整",
+    "app_subtitle": "因为每一道食谱都值得一试",
+    "language_selector_placeholder": "选择语言",
+    "developer_credits_message_1": "用 ❤️ 开发",
+    "developer_credits_message_2": "作者",
+    "scaler_original_servings_amount": "原始食谱的份量",
+    "scaler_funny_message_1": "天啊！你是要请多少人吃饭？😱",
+    "scaler_funny_message_2": "希望大家会一起分摊费用！",
+    "new_ingredient_add_button": "添加食材",
+    "new_ingredient_name_placeholder": "食材名称",
+    "new_ingredient_amount_placeholder": "数量",
+    "new_ingredient_unit_placeholder": "单位",
+    "list_of_ingredients_delete_all_button": "全部删除",
+    "list_of_ingredients_copy_recipe_button": "复制食谱"
+}
