@@ -1,5 +1,16 @@
 {
-    "app-title": "Recipe Scaler",
-    "app-subtitle": "Every recipe deserves to be tasted",
-    "select-language": "Select language"
+    "app_title": "Recipe Scaler",
+    "app_subtitle": "Every recipe deserves to be tasted",
+    "language_selector_placeholder": "Select language",
+    "developer_credits_message_1": "Developed with",
+    "developer_credits_message_2": "by",
+    "scaler_original_servings_amount": "Original servings",
+    "scaler_funny_message_1": "Yo, how many people are you planning to cook for tonight?? 😱",
+    "scaler_funny_message_2": "I hope you split the bill!",
+    "new_ingredient_add_button": "Add ingredient",
+    "new_ingredient_name_placeholder": "Ingredient name",
+    "new_ingredient_amount_placeholder": "Quantity",
+    "new_ingredient_unit_placeholder": "Unit",
+    "list_of_ingredients_delete_all_button": "Delete all",
+    "list_of_ingredients_copy_recipe_button": "Copy recipe"
 }
