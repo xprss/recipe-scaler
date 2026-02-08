@@ -1,0 +1,16 @@
+{
+    "app_title": "रेसिपी स्केलर",
+    "app_subtitle": "क्योंकि हर रेसिपी आज़माने लायक है",
+    "language_selector_placeholder": "भाषा चुनें",
+    "developer_credits_message_1": "❤️ के साथ विकसित",
+    "developer_credits_message_2": "द्वारा",
+    "scaler_original_servings_amount": "मूल रेसिपी में दी गई सर्विंग्स",
+    "scaler_funny_message_1": "अरे वाह! कितने लोग खाने पर आ रहे हैं? 😱",
+    "scaler_funny_message_2": "उम्मीद है सब खर्च बाँटेंगे!",
+    "new_ingredient_add_button": "सामग्री जोड़ें",
+    "new_ingredient_name_placeholder": "सामग्री का नाम",
+    "new_ingredient_amount_placeholder": "मात्रा",
+    "new_ingredient_unit_placeholder": "इकाई",
+    "list_of_ingredients_delete_all_button": "सब हटाएँ",
+    "list_of_ingredients_copy_recipe_button": "रेसिपी कॉपी करें"
+}
