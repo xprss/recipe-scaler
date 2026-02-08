@@ -1,0 +1,16 @@
+{
+    "app_title": "Rezepte Skalieren",
+    "app_subtitle": "Denn jedes Rezept verdient es, ausprobiert zu werden",
+    "language_selector_placeholder": "Sprache auswählen",
+    "developer_credits_message_1": "Entwickelt mit",
+    "developer_credits_message_2": "von",
+    "scaler_original_servings_amount": "In der Originalrezeptur angegebene Portionen",
+    "scaler_funny_message_1": "Meine Güte! Und wie viele Leute hast du zum Abendessen? 😱",
+    "scaler_funny_message_2": "Ich hoffe, ihr teilt euch die Kosten!",
+    "new_ingredient_add_button": "Zutat hinzufügen",
+    "new_ingredient_name_placeholder": "Name der Zutat",
+    "new_ingredient_amount_placeholder": "Menge",
+    "new_ingredient_unit_placeholder": "Einheit",
+    "list_of_ingredients_delete_all_button": "Alle löschen",
+    "list_of_ingredients_copy_recipe_button": "Rezept kopieren"
+}
