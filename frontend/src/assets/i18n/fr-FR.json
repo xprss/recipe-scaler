@@ -1,0 +1,16 @@
+{
+    "app_title": "Échelle Recettes",
+    "app_subtitle": "Parce que chaque recette mérite d’être essayée",
+    "language_selector_placeholder": "Sélectionnez la langue",
+    "developer_credits_message_1": "Développé avec",
+    "developer_credits_message_2": "par",
+    "scaler_original_servings_amount": "Portions indiquées dans la recette originale",
+    "scaler_funny_message_1": "Oh là là ! Et combien de personnes as-tu à dîner ? 😱",
+    "scaler_funny_message_2": "J’espère que vous partagez les frais !",
+    "new_ingredient_add_button": "Ajouter un ingrédient",
+    "new_ingredient_name_placeholder": "Nom de l’ingrédient",
+    "new_ingredient_amount_placeholder": "Quantité",
+    "new_ingredient_unit_placeholder": "Unité",
+    "list_of_ingredients_delete_all_button": "Tout supprimer",
+    "list_of_ingredients_copy_recipe_button": "Copier la recette"
+}
