@@ -8,7 +8,7 @@
       (keydown)="handleKeyDown($event)"
       autocomplete="off"
     />
-    <label for="username">Nome ingrediente</label>
+    <label for="username">{{ 'new_ingredient_name_placeholder' | translate }}</label>
   </p-floatlabel>
   <div class="quantity-and-unit">
     <p-floatlabel variant="in">
@@ -20,7 +20,7 @@
         (keydown)="handleKeyDown($event)"
         autocomplete="off"
       />
-      <label for="quantity">Quantità</label>
+      <label for="quantity">{{ 'new_ingredient_amount_placeholder' | translate }}</label>
     </p-floatlabel>
     <p-floatlabel variant="in">
       <input
@@ -30,7 +30,7 @@
         (keydown)="handleKeyDown($event)"
         autocomplete="off"
       />
-      <label for="unit">Unità</label>
+      <label for="unit">{{ 'new_ingredient_unit_placeholder' | translate }}</label>
     </p-floatlabel>
   </div>
 
@@ -38,7 +38,7 @@
     class="new-ingredient-button"
     (click)="addNewIngredient()"
     icon="pi pi-plus"
-    label="Aggiungi ingrediente"
+    [label]="'new_ingredient_add_button' | translate"
     [fluid]="true"
   ></p-button>
 </div>

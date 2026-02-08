@@ -1,7 +1,9 @@
 <div class="scale">
   <div class="original-portions-container">
     <div class="original-portions">
-      <label class="small" id="original-input-label" for="original-portions-input">Porzioni indicate nella ricetta originale</label>
+      <label class="small" id="original-input-label" for="original-portions-input">{{
+        'scaler_original_servings_amount' | translate
+      }}</label>
       <input
         pInputText
         id="original-portions-input"
@@ -13,7 +15,10 @@
       />
     </div>
     @if (!brain.originalPortions) {
-      <span class="small centered-text grayded-out">Se non definisci le porzioni di partenza, prenderemo come riferimento una ricetta per due persone.</span>
+    <span class="small centered-text grayded-out"
+      >Se non definisci le porzioni di partenza, prenderemo come riferimento una ricetta per due
+      persone.</span
+    >
     }
   </div>
   <hr class="divider" />
@@ -23,9 +28,8 @@
     <p-button rounded="true" class="scale-button" (click)="increasePortions()" icon="pi pi-plus" />
   </div>
   @if (brain.portions > 35 && brain.portions <= 50) {
-  <p class="funny-message">La peppa! E quanta gente hai a cena? 😱</p>
-  }
-  @if (brain.portions > 50) {
-  <p class="funny-message">Spero dividiate la spesa!</p>
+  <p class="funny-message">{{ 'scaler_funny_message_1' | translate }}</p>
+  } @if (brain.portions > 50) {
+  <p class="funny-message">{{ 'scaler_funny_message_2' | translate }}</p>
   }
 </div>

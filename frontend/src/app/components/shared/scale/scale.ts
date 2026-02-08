@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-scale',
-  imports: [FormsModule, ButtonModule, InputTextModule, FloatLabelModule],
+  imports: [FormsModule, ButtonModule, TranslateModule, InputTextModule, FloatLabelModule],
   templateUrl: './scale.html',
   styleUrl: './scale.scss',
 })

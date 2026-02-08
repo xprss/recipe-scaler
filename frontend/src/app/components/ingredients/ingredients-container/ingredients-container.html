@@ -5,7 +5,7 @@
     icon="pi pi-trash"
     size="small"
     [disabled]="brain.ingredients.length === 0"
-    label="Elimina tutti"
+    [label]="'list_of_ingredients_delete_all_button' | translate"
     (onClick)="deleteAllIngredients()"
     [fluid]="true"
   ></p-button>
@@ -15,7 +15,7 @@
     icon="pi pi-copy"
     size="small"
     [disabled]="brain.ingredients.length === 0"
-    label="Copia"
+    [label]="'list_of_ingredients_copy_recipe_button' | translate"
     (onClick)="copyIngredientsToClipboard()"
     [fluid]="true"
   ></p-button>

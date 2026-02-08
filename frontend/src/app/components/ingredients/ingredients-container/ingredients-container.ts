@@ -5,10 +5,11 @@ import { Ingredient } from '../ingredient/ingredient';
 import { TableModule } from 'primeng/table';
 import { Button } from 'primeng/button';
 import { copyTextToClipboard } from '../../../lib/utils';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-ingredients-container',
-  imports: [FormsModule, Ingredient, TableModule, Button],
+  imports: [FormsModule, TranslateModule, Ingredient, TableModule, Button],
   templateUrl: './ingredients-container.html',
   styleUrl: './ingredients-container.scss',
 })

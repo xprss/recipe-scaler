@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-new-ingredient',
-  imports: [FormsModule, ButtonModule, FloatLabelModule, InputTextModule],
+  imports: [FormsModule, ButtonModule, TranslateModule, FloatLabelModule, InputTextModule],
   templateUrl: './new-ingredient.html',
   styleUrl: './new-ingredient.scss',
 })

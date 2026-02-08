@@ -1,7 +1,7 @@
 <h1 class="main-title jacquard">
-  {{ 'app-title' | translate }}<span class="version-tag">{{ version }}</span>
+  {{ 'app_title' | translate }}<span class="version-tag">{{ version }}</span>
 </h1>
-<h5 class="subtitle">{{ 'app-subtitle' | translate }}</h5>
+<h5 class="subtitle">{{ 'app_subtitle' | translate }}</h5>
 <div class="langauge-and-credits">
   <p-select
     class="no-arrow"
@@ -10,11 +10,11 @@
     (onChange)="changeLang($event.value)"
     [optionLabel]="this.optionLabel"
     [optionValue]="this.optionValue"
-    placeholder="{{ 'select-language' | translate }}"
+    placeholder="{{ 'language_selector_placeholder' | translate }}"
   />
   <span class="credits"
-    >Sviluppato con&nbsp;&nbsp;<i class="pi pi-heart-fill" style="color: var(--p-red-400)"></i
-    >&nbsp;&nbsp;da
+    >{{'developer_credits_message_1' | translate}}&nbsp;&nbsp;<i class="pi pi-heart-fill" style="color: var(--p-red-400)"></i
+    >&nbsp;&nbsp;{{'developer_credits_message_2' | translate}}
     <p-button
       (onClick)="onNavigateToGitHub()"
       size="small"
