@@ -16,7 +16,7 @@
         pInputText
         id="quantity"
         type="number"
-	[placeholder]="!brain.inputIngredient ? '0':undefined"
+	[placeholder]="!brain.inputIngredient.quantity ? '0':null"
         [(ngModel)]="brain.inputIngredient.quantity"
         (keydown)="handleKeyDown($event)"
         autocomplete="off"
