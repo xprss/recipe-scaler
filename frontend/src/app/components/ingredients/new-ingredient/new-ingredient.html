@@ -2,36 +2,36 @@
   <p-floatlabel variant="in" class="w-100">
     <input
       pInputText
-      id="username"
+      id="new-ingredient-name-input-field"
       class="w-100"
       [(ngModel)]="brain.inputIngredient.name"
       (keydown)="handleKeyDown($event)"
       autocomplete="off"
     />
-    <label for="username">{{ 'new_ingredient_name_placeholder' | translate }}</label>
+    <label for="new-ingredient-name-input-field">{{ 'new_ingredient_name_placeholder' | translate }}</label>
   </p-floatlabel>
   <div class="quantity-and-unit">
     <p-floatlabel variant="in">
       <input
         pInputText
-        id="quantity"
+        id="new-ingredient-quantity-input-field"
         type="number"
-	[placeholder]="!brain.inputIngredient.quantity ? '0':null"
+        [placeholder]="!brain.inputIngredient.quantity ? '0' : null"
         [(ngModel)]="brain.inputIngredient.quantity"
         (keydown)="handleKeyDown($event)"
         autocomplete="off"
       />
-      <label for="quantity">{{ 'new_ingredient_amount_placeholder' | translate }}</label>
+      <label for="new-ingredient-quantity-input-field">{{ 'new_ingredient_amount_placeholder' | translate }}</label>
     </p-floatlabel>
     <p-floatlabel variant="in">
       <input
         pInputText
-        id="unit"
+        id="new-ingredient-unit-input-field"
         [(ngModel)]="brain.inputIngredient.unit"
         (keydown)="handleKeyDown($event)"
         autocomplete="off"
       />
-      <label for="unit">{{ 'new_ingredient_unit_placeholder' | translate }}</label>
+      <label for="new-ingredient-unit-input-field">{{ 'new_ingredient_unit_placeholder' | translate }}</label>
     </p-floatlabel>
   </div>
 
