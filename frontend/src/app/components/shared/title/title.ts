@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Button } from 'primeng/button';
 import { SelectModule } from 'primeng/select';
 import { environment } from '../../../../environment/environment';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
-import { DEFAULT_LANGUAGE, DISPLAY_NAME, Lang, LANG_CODE, Langs } from '../../../lib/langs';
+import { DEFAULT_LANGUAGE, DISPLAY_NAME, LANG_CODE, Langs } from '../../../lib/langs';
 
 @Component({
   selector: 'app-title',
@@ -12,7 +12,7 @@ import { DEFAULT_LANGUAGE, DISPLAY_NAME, Lang, LANG_CODE, Langs } from '../../..
   templateUrl: './title.html',
   styleUrl: './title.scss',
 })
-export class Title implements OnInit {
+export class Title {
   constructor(public translate: TranslateService) {}
   public version: string = 'v' + environment.version;
   public onNavigateToGitHub(): void {
@@ -23,10 +23,6 @@ export class Title implements OnInit {
   public optionLabel = DISPLAY_NAME;
   public optionValue = LANG_CODE;
   public langsOptions = Langs;
-
-  ngOnInit(): void {
-    console.log(this.currentlySelectedLanguage)
-  }
 
   public changeLang(lang: string): void {
     this.translate.use(lang);

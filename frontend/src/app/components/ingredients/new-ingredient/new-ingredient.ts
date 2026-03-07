@@ -18,9 +18,17 @@ export class NewIngredient {
     this.brain.addNewIngredient();
   }
 
+  public moveFocusToNameInputElement() {
+    const nameInputElement = document.getElementById('new-ingredient-name-input-field') as HTMLInputElement;
+    if (nameInputElement) {
+      nameInputElement.focus();
+    }
+  }
+
   public handleKeyDown(event: KeyboardEvent) {
     if (event.key === 'Enter') {
       this.addNewIngredient();
+      this.moveFocusToNameInputElement();
     }
   }
 }
