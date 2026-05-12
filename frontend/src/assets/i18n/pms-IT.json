@@ -1,0 +1,16 @@
+{
+    "app_title": "Scala le Ricete",
+    "app_subtitle": "Përché minca riceta a merita d'esse provà",
+    "language_selector_placeholder": "Sernì la lenga",
+    "developer_credits_message_1": "Svilupà con",
+    "developer_credits_message_2": "da",
+    "scaler_original_servings_amount": "Porzion indicà ant la riceta originala",
+    "scaler_funny_message_1": "La peuva! E quanta gent a l'has a sena? 😱",
+    "scaler_funny_message_2": "Spero che vëddij la spèsa!",
+    "new_ingredient_add_button": "Zonta n'ingredent",
+    "new_ingredient_name_placeholder": "Nom de l'ingredent",
+    "new_ingredient_amount_placeholder": "Quantità",
+    "new_ingredient_unit_placeholder": "Unità",
+    "list_of_ingredients_delete_all_button": "Scanca tùt",
+    "list_of_ingredients_copy_recipe_button": "Copia la riceta"
+}
