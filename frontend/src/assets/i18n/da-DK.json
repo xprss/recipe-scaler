@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "Mængde",
     "new_ingredient_unit_placeholder": "Enhed",
     "list_of_ingredients_delete_all_button": "Slet alle",
-    "list_of_ingredients_copy_recipe_button": "Kopiér opskrift"
+    "list_of_ingredients_copy_recipe_button": "Kopiér opskrift",
+    "copy_recipe_ingredients": "Ingredienser til {count, plural, =1 {én portion} other {# portioner}}:\n"
 }

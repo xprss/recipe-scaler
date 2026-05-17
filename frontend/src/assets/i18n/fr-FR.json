@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "Quantité",
     "new_ingredient_unit_placeholder": "Unité",
     "list_of_ingredients_delete_all_button": "Tout supprimer",
-    "list_of_ingredients_copy_recipe_button": "Copier la recette"
+    "list_of_ingredients_copy_recipe_button": "Copier la recette",
+    "copy_recipe_ingredients": "Ingrédients pour {count, plural, =1 {une portion} other {# portions}}:\n"
 }

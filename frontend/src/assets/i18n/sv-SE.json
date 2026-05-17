@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "Mängd",
     "new_ingredient_unit_placeholder": "Enhet",
     "list_of_ingredients_delete_all_button": "Ta bort alla",
-    "list_of_ingredients_copy_recipe_button": "Kopiera recept"
+    "list_of_ingredients_copy_recipe_button": "Kopiera recept",
+    "copy_recipe_ingredients": "Ingredienser för {count, plural, =1 {en portion} other {# portioner}}:\n"
 }
