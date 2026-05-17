@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "الكمية",
     "new_ingredient_unit_placeholder": "الوحدة",
     "list_of_ingredients_delete_all_button": "حذف الكل",
-    "list_of_ingredients_copy_recipe_button": "نسخ الوصفة"
+    "list_of_ingredients_copy_recipe_button": "نسخ الوصفة",
+    "copy_recipe_ingredients": "المكونات لـ {count, plural, =1 {حصة واحدة} other {# حصص}}:\n"
 }

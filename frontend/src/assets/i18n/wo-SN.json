@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "Limu",
     "new_ingredient_unit_placeholder": "Tollu",
     "list_of_ingredients_delete_all_button": "Far lépp",
-    "list_of_ingredients_copy_recipe_button": "Duppi resip"
+    "list_of_ingredients_copy_recipe_button": "Duppi resip",
+    "copy_recipe_ingredients": "Ingrédient yi ngir {count, plural, =1 {benn portion} other {# portions}}:\n"
 }

@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "分量",
     "new_ingredient_unit_placeholder": "単位",
     "list_of_ingredients_delete_all_button": "すべて削除",
-    "list_of_ingredients_copy_recipe_button": "レシピをコピー"
+    "list_of_ingredients_copy_recipe_button": "レシピをコピー",
+    "copy_recipe_ingredients": "材料（{count, plural, =1 {1人分} other {#人分}}）:\n"
 }
