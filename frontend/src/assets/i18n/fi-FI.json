@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "Määrä",
     "new_ingredient_unit_placeholder": "Yksikkö",
     "list_of_ingredients_delete_all_button": "Poista kaikki",
-    "list_of_ingredients_copy_recipe_button": "Kopioi resepti"
+    "list_of_ingredients_copy_recipe_button": "Kopioi resepti",
+    "copy_recipe_ingredients": "Ainekset {count, plural, =1 {yhdelle annokselle} other {# annokselle}}:\n"
 }

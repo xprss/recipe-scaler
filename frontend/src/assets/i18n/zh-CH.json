@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "数量",
     "new_ingredient_unit_placeholder": "单位",
     "list_of_ingredients_delete_all_button": "全部删除",
-    "list_of_ingredients_copy_recipe_button": "复制食谱"
+    "list_of_ingredients_copy_recipe_button": "复制食谱",
+    "copy_recipe_ingredients": "食材（{count, plural, =1 {1人份} other {#人份}}):\n"
 }

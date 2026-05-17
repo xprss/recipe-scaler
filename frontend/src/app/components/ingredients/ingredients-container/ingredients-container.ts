@@ -5,7 +5,7 @@ import { Ingredient } from '../ingredient/ingredient';
 import { TableModule } from 'primeng/table';
 import { Button } from 'primeng/button';
 import { copyTextToClipboard } from '../../../lib/utils';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-ingredients-container',
@@ -14,10 +14,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './ingredients-container.scss',
 })
 export class IngredientsContainer {
-  constructor(protected brain: Brain) {}
+  constructor(protected brain: Brain, protected translateService: TranslateService) {}
 
   public copyIngredientsToClipboard(): void {
-    copyTextToClipboard(this.brain);
+    copyTextToClipboard(this.brain, this.translateService);
   }
 
   public deleteAllIngredients(): void {

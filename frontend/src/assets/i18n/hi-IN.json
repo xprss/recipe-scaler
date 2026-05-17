@@ -12,5 +12,6 @@
     "new_ingredient_amount_placeholder": "मात्रा",
     "new_ingredient_unit_placeholder": "इकाई",
     "list_of_ingredients_delete_all_button": "सब हटाएँ",
-    "list_of_ingredients_copy_recipe_button": "रेसिपी कॉपी करें"
+    "list_of_ingredients_copy_recipe_button": "रेसिपी कॉपी करें",
+    "copy_recipe_ingredients": "सामग्री {count, plural, =1 {एक सर्विंग के लिए} other {# सर्विंग्स के लिए}}:\n"
 }

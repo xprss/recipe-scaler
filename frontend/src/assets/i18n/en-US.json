@@ -6,11 +6,12 @@
     "developer_credits_message_2": "by",
     "scaler_original_servings_amount": "Servings in the original recipe",
     "scaler_funny_message_1": "Whoa! How many people are you feeding? 😱",
-    "scaler_funny_message_2": "Hope everyone’s splitting the bill!",
+    "scaler_funny_message_2": "Hope everyone's splitting the bill!",
     "new_ingredient_add_button": "Add ingredient",
     "new_ingredient_name_placeholder": "Ingredient name",
     "new_ingredient_amount_placeholder": "Amount",
     "new_ingredient_unit_placeholder": "Unit",
     "list_of_ingredients_delete_all_button": "Delete all",
-    "list_of_ingredients_copy_recipe_button": "Copy recipe"
+    "list_of_ingredients_copy_recipe_button": "Copy recipe",
+    "copy_recipe_ingredients": "Ingredients for {count, plural, =1 {one serving} other {# servings}}:\n"
 }
