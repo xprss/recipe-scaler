@@ -4,8 +4,9 @@ import Aura from '@primeng/themes/aura';
 
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
-import { provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateService, TranslateCompiler } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateMessageFormatCompiler } from 'ngx-translate-messageformat-compiler';
 
 bootstrapApplication(App, {
   ...appConfig,
@@ -25,6 +26,10 @@ bootstrapApplication(App, {
         prefix: './assets/i18n/',
         suffix: '.json',
       }),
+      compiler: {
+        provide: TranslateCompiler,
+        useClass: TranslateMessageFormatCompiler
+      }
     }),
   ],
 }).catch((err) => console.error(err));
