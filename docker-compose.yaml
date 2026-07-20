@@ -1,7 +1,47 @@
 services:
   client:
-    image: xprss/recipe-scaler:${VERSION:-latest}
+    build:
+      context: ./frontend
+    image: recipe-scaler-client:${VERSION:-latest}
     container_name: recipe-scaler
     restart: unless-stopped
+    depends_on:
+      - api
     ports:
       - "9000:80"
+
+  api:
+    build:
+      context: ./backend
+    image: recipe-scaler-api:${VERSION:-latest}
+    container_name: recipe-scaler-api
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:0.5b}
+    depends_on:
+      ollama-pull:
+        condition: service_completed_successfully
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: recipe-scaler-ollama
+    restart: unless-stopped
+    volumes:
+      - ollama-data:/root/.ollama
+
+  ollama-pull:
+    image: ollama/ollama:latest
+    container_name: recipe-scaler-ollama-pull
+    restart: no
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    depends_on:
+      - ollama
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - "until ollama list >/dev/null 2>&1; do sleep 2; done; ollama pull ${OLLAMA_MODEL:-qwen2.5:0.5b}"
+
+volumes:
+  ollama-data:
