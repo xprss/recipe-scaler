@@ -24,4 +24,15 @@ export class Ingredient {
     }
     return arg1;
   }
+
+  public formatQuantity(): string {
+    const unit = this.ingredient.unit?.trim();
+
+    if (typeof this.ingredient.quantity !== 'number') {
+      return unit ?? '';
+    }
+
+    const scaledQuantity = this.ingredient.quantity * this.brain.getCoefficient();
+    return [scaledQuantity, unit].filter(Boolean).join(' ');
+  }
 }

@@ -1,0 +1,20 @@
+<div class="recipe-import-container">
+  <label for="recipe-import-textarea">{{ 'recipe_import_textarea_label' | translate }}</label>
+  <textarea
+    id="recipe-import-textarea"
+    [(ngModel)]="recipeText"
+    [disabled]="isParsing"
+    [placeholder]="'recipe_import_textarea_placeholder' | translate"
+    rows="6"
+  ></textarea>
+  @if (hasError) {
+    <p class="recipe-import-error">{{ 'recipe_import_error' | translate }}</p>
+  }
+  <p-button
+    icon="pi pi-sparkles"
+    [label]="(isParsing ? 'recipe_import_loading_button' : 'recipe_import_button') | translate"
+    [disabled]="!canParse"
+    [fluid]="true"
+    (onClick)="parseRecipe()"
+  ></p-button>
+</div>

@@ -11,6 +11,11 @@
     "new_ingredient_name_placeholder": "Nome ingrediente",
     "new_ingredient_amount_placeholder": "Quantità",
     "new_ingredient_unit_placeholder": "Unità",
+    "recipe_import_textarea_label": "Importa testo ricetta",
+    "recipe_import_textarea_placeholder": "Incolla una ricetta qui per estrarne gli ingredienti con il parser locale",
+    "recipe_import_button": "Importa ingredienti",
+    "recipe_import_loading_button": "Importazione...",
+    "recipe_import_error": "La ricetta non può essere analizzata. Verifica che il parser locale sia avviato e riprova.",
     "list_of_ingredients_delete_all_button": "Elimina tutti",
     "list_of_ingredients_copy_recipe_button": "Copia ricetta",
     "copy_recipe_ingredients": "Ingredienti per {count, plural, =1 {una porzione} other {# porzioni}}:\n"

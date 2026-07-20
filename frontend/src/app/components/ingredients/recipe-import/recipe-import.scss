@@ -1,0 +1,39 @@
+:host {
+  width: 100%;
+}
+
+.recipe-import-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+
+.recipe-import-container label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.recipe-import-container textarea {
+  width: 100%;
+  min-height: 8rem;
+  resize: vertical;
+  border: 1px solid var(--p-inputtext-border-color);
+  border-radius: var(--p-inputtext-border-radius);
+  padding: 0.75rem;
+  font: inherit;
+  background: var(--p-inputtext-background);
+  color: var(--p-inputtext-color);
+}
+
+.recipe-import-container textarea:focus {
+  border-color: var(--p-inputtext-focus-border-color);
+  outline: none;
+}
+
+.recipe-import-error {
+  margin: 0;
+  color: var(--p-red-500);
+  font-size: 0.85rem;
+}

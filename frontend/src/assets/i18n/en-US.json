@@ -11,6 +11,11 @@
     "new_ingredient_name_placeholder": "Ingredient name",
     "new_ingredient_amount_placeholder": "Amount",
     "new_ingredient_unit_placeholder": "Unit",
+    "recipe_import_textarea_label": "Import recipe text",
+    "recipe_import_textarea_placeholder": "Paste a recipe here to extract its ingredients with the local parser",
+    "recipe_import_button": "Import ingredients",
+    "recipe_import_loading_button": "Importing...",
+    "recipe_import_error": "The recipe could not be parsed. Check that the local parser is running and try again.",
     "list_of_ingredients_delete_all_button": "Delete all",
     "list_of_ingredients_copy_recipe_button": "Copy recipe",
     "copy_recipe_ingredients": "Ingredients for {count, plural, =1 {one serving} other {# servings}}:\n"

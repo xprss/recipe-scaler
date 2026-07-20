@@ -39,6 +39,21 @@ export class Brain {
     this.ingredients = [];
   }
 
+  public replaceIngredients(ingredients: IngredientDTO[]) {
+    this.ingredients = ingredients
+      .map((ingredient) => {
+        const name = ingredient.name?.trim();
+        const unit = ingredient.unit?.trim();
+
+        return new IngredientDTO(
+          name ? name.charAt(0).toUpperCase() + name.slice(1) : undefined,
+          ingredient.quantity,
+          unit || null,
+        );
+      })
+      .filter((ingredient) => ingredient.name);
+  }
+
   public getCoefficient() {
 	let nextOriginalPortions: number = 2;
 	if (this.originalPortions > 0) {

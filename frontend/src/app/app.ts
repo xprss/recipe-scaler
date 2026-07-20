@@ -4,6 +4,7 @@ import { IngredientsModule } from './components/ingredients/ingredients-module';
 import { Title } from './components/shared/title/title';
 import { Scale } from './components/shared/scale/scale';
 import { NewIngredient } from './components/ingredients/new-ingredient/new-ingredient';
+import { RecipeImport } from './components/ingredients/recipe-import/recipe-import';
 import { IngredientsContainer } from './components/ingredients/ingredients-container/ingredients-container';
 import { Brain } from './brain';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -15,6 +16,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     IngredientsModule,
     Title,
     Scale,
+    RecipeImport,
     NewIngredient,
     IngredientsContainer,
     TranslateModule,
